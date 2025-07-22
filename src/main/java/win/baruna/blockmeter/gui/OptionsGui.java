@@ -6,6 +6,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 //import net.minecraft.client.gl.ShaderProgramKey;
 //import net.minecraft.client.gl.ShaderProgramKeys;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ButtonTextures;
 import net.minecraft.client.gui.screen.Screen;
@@ -89,7 +90,7 @@ public class OptionsGui extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        super.renderBackground(context, mouseX, mouseY, delta);
+//        super.renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
     }
 
@@ -142,7 +143,7 @@ class ColorButton extends ButtonWidget {
     public void renderWidget(DrawContext context, final int int_1, final int int_2, final float float_1) {
 
         context.drawGuiTexture(
-                RenderLayer::getGuiTextured,
+                RenderPipelines.GUI_TEXTURED,
                 TEXTURES.get(this.active, this.isSelected()),
                 x, y, width, height, color.getColor()
         );

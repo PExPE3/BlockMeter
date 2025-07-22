@@ -27,14 +27,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.OptionalDouble;
 
-import static net.minecraft.client.gl.RenderPipelines.MATRICES_COLOR_SNIPPET;
+import static net.minecraft.client.gl.RenderPipelines.POSITION_COLOR_SNIPPET;
 
 public class ClientMeasureBox extends MeasureBox {
     private static final RenderLayer.MultiPhase DEBUG_LINE_STRIP = RenderLayer.of(
             "debug_line_strip_no_depth",
             1536,
             RenderPipelines.register(
-                    RenderPipeline.builder(MATRICES_COLOR_SNIPPET)
+                    RenderPipeline.builder(POSITION_COLOR_SNIPPET)
                             .withLocation("pipeline/debug_line_strip")
                             .withVertexShader("core/position_color")
                             .withFragmentShader("core/position_color")
@@ -48,7 +48,7 @@ public class ClientMeasureBox extends MeasureBox {
     );
     private static final RenderLayer.MultiPhase DEBUG_QUADS = RenderLayer.of(
             "debug_quads_no_depth", 1536, false, true, RenderPipelines.register(
-                    RenderPipeline.builder(RenderPipelines.POSITION_COLOR_SNIPPET).withLocation("pipeline/debug_quads").withCull(false).withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build()
+                    RenderPipeline.builder(POSITION_COLOR_SNIPPET).withLocation("pipeline/debug_quads").withCull(false).withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build()
             ), RenderLayer.MultiPhaseParameters.builder().build(false)
     );
     @NotNull
