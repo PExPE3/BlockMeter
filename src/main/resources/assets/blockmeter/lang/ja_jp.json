@@ -23,7 +23,7 @@
   "text.autoconfig.blockmeter.title": "Block Meter",
 
   "text.autoconfig.blockmeter.option.minimalLabelSize": "ボックスラベルの最小サイズ",
-  "text.autoconfig.blockmeter.option.minimalLabelSize.@Tooltip[0]": "10ブロック以上離れると、ラベルのサイズを固定して",
+  "text.autoconfig.blockmeter.option.minimalLabelSize.@Tooltip[0]": "10ブロック以上離れると、ラベルのサイズが固定されます",
   "text.autoconfig.blockmeter.option.minimalLabelSize.@Tooltip[1]": "遠距離でも見やすくします。",
 
   "text.autoconfig.blockmeter.option.deleteBoxesOnDisable": "無効化時にボックスを削除",
