@@ -1,0 +1,42 @@
+{
+  "blockmeter.keepColor": "常に現在の色を使用: %s",
+  "blockmeter.diagonal": "内側の対角線: %s",
+  "blockmeter.toggle.on": "%s がブロックメーターとして使用されます！",
+  "blockmeter.toggle.off": "ブロックメーターを無効化しました！",
+  "blockmeter.clearLast": "最後のボックスを削除しました",
+  "blockmeter.clearAll": "全てのボックスを削除しました",
+  "blockmeter.showOthers": "他のプレイヤーのボックスを表示: %s",
+  "blockmeter.moveCorner": "ボックスの角を移動",
+  "blockmeter.restrictMining": "採掘を制限: %s",
+  "blockmeter.restrictMining.inside": "内側のみ",
+  "blockmeter.restrictMining.outside": "外側のみ",
+
+  "blockmeter.boxToString": "開始: (%d, %d, %d), 終了: (%d, %d, %d)",
+
+  "category.blockmeter.key": "Block Meter",
+
+  "key.blockmeter.assign": "ブロックメーター切り替え",
+  "key.blockmeter.menu": "オプションを表示",
+  "key.blockmeter.measure": "アイテムなしで計測",
+  "key.blockmeter.useItem": "右クリック以外の「アイテムを使用」キー",
+
+  "text.autoconfig.blockmeter.title": "Block Meter",
+
+  "text.autoconfig.blockmeter.option.minimalLabelSize": "ボックスラベルの最小サイズ",
+  "text.autoconfig.blockmeter.option.minimalLabelSize.@Tooltip[0]": "10ブロック以上離れると、ラベルのサイズを固定して",
+  "text.autoconfig.blockmeter.option.minimalLabelSize.@Tooltip[1]": "遠距離でも見やすくします。",
+
+  "text.autoconfig.blockmeter.option.deleteBoxesOnDisable": "無効化時にボックスを削除",
+  "text.autoconfig.blockmeter.option.deleteBoxesOnDisable.@Tooltip[0]": "ブロックメーターを無効化するキーを押したとき、",
+  "text.autoconfig.blockmeter.option.deleteBoxesOnDisable.@Tooltip[1]": "計測ボックスを削除します。",
+
+  "text.autoconfig.blockmeter.option.sendBoxes": "対応サーバーで他のプレイヤーにボックスを送信",
+  "text.autoconfig.blockmeter.option.sendBoxes.@Tooltip[0]": "ボックスはゲーム内オプションで非表示にできます。",
+  "text.autoconfig.blockmeter.option.sendBoxes.@Tooltip[1]": "サーバーには Block Meter mod が",
+  "text.autoconfig.blockmeter.option.sendBoxes.@Tooltip[2]": "プラグイン (Bukkit) または mod (Fabric) として必要です。",
+
+  "text.autoconfig.blockmeter.option.showBoxesWhenDisabled": "ブロックメーターを無効化してもボックスを表示",
+  "text.autoconfig.blockmeter.option.backgroundForLabels": "ラベル背景を色付きにする",
+
+  "text.autoconfig.blockmeter.option.reach": "プレイヤーからのブロック選択範囲"
+}
